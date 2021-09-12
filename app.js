@@ -67,7 +67,7 @@ function loadEventListeners() {
 
     //filter tasks
     filter.addEventListener(`input`, function (e) {
-        const text = e.target.value;
+        const text = e.target.value.toLowerCase();
         
         document.querySelectorAll(`.collection-item`).forEach(function (task) {
             const item = task.firstChild.textContent;
