@@ -66,7 +66,7 @@ function loadEventListeners() {
     });
 
     //filter tasks
-    filter.addEventListener(`keyup`, function (e) {
+    filter.addEventListener(`input`, function (e) {
         const text = e.target.value;
         
         document.querySelectorAll(`.collection-item`).forEach(function (task) {
